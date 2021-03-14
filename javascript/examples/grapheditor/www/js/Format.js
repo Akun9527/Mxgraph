@@ -4654,7 +4654,7 @@ StyleFormatPanel.prototype.addStroke = function(container)
 	styleSelect.style.right = '72px';
 	styleSelect.style.width = '80px';
 
-	var styles = ['sharp', 'rounded', 'curved'];
+	var styles = ['sharp', 'rounded', 'curved', 'dashed'];
 
 	for (var i = 0; i < styles.length; i++)
 	{
@@ -4750,6 +4750,7 @@ StyleFormatPanel.prototype.addStroke = function(container)
 		addItem(menu, 75, 'dotted', [mxConstants.STYLE_DASHED, mxConstants.STYLE_DASH_PATTERN], ['1', '1 1']).setAttribute('title', mxResources.get('dotted') + ' (1)');
 		addItem(menu, 75, 'dotted', [mxConstants.STYLE_DASHED, mxConstants.STYLE_DASH_PATTERN], ['1', '1 2']).setAttribute('title', mxResources.get('dotted') + ' (2)');
 		addItem(menu, 75, 'dotted', [mxConstants.STYLE_DASHED, mxConstants.STYLE_DASH_PATTERN], ['1', '1 4']).setAttribute('title', mxResources.get('dotted') + ' (3)');
+		addItem(menu, 75, 'dotted', [mxConstants.STYLE_DASHED, mxConstants.STYLE_DASH_PATTERN], ['1', '1 4 2 8']).setAttribute('title', mxResources.get('dotted') + ' (4)');
 	}));
 	
 	// Used for mixed selection (vertices and edges)
@@ -4770,6 +4771,7 @@ StyleFormatPanel.prototype.addStroke = function(container)
 		addItem(menu, 33, 'dotted', [mxConstants.STYLE_DASHED, mxConstants.STYLE_DASH_PATTERN], ['1', '1 1']).setAttribute('title', mxResources.get('dotted') + ' (1)');
 		addItem(menu, 33, 'dotted', [mxConstants.STYLE_DASHED, mxConstants.STYLE_DASH_PATTERN], ['1', '1 2']).setAttribute('title', mxResources.get('dotted') + ' (2)');
 		addItem(menu, 33, 'dotted', [mxConstants.STYLE_DASHED, mxConstants.STYLE_DASH_PATTERN], ['1', '1 4']).setAttribute('title', mxResources.get('dotted') + ' (3)');
+		addItem(menu, 33, 'dotted', [mxConstants.STYLE_DASHED, mxConstants.STYLE_DASH_PATTERN], ['1', '1 4 2 8']).setAttribute('title', mxResources.get('dotted') + ' (4)');
 	}));
 	
 	var stylePanel2 = stylePanel.cloneNode(false);
